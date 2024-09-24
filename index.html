@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="scripit.js">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="neon">
+        <div id="red"></div>
+        <div id="yellow"></div>
+        <div id="green"></div>
+    </div>
+    <script>
+        function neonlight() {
+            setTimeout(() => {
+                let a = document.getElementById("yellow")
+                a.style.backgroundColor = "yellow"
+            }, 3000)
+            setTimeout(() => {
+                let b = document.getElementById("red")
+                b.style.backgroundColor = "gray"
+            }, 3000)
+            setTimeout(() => {
+                let c = document.getElementById("yellow")
+                c.style.backgroundColor = "gray"
+            }, 5000)
+            setTimeout(() => {
+                let d = document.getElementById("green")
+                d.style.backgroundColor = "rgb(82, 247, 82)"
+            }, 5000)
+            setTimeout(() => {
+                let e = document.getElementById("red")
+                e.style.backgroundColor = "red"
+            }, 7000)
+            setTimeout(() => {
+                let f = document.getElementById("green")
+                f.style.backgroundColor = "gray"
+            }, 7000)
+        }
+        neonlight()
+        setInterval(() => {
+            neonlight()
+        },7000)
+    </script>
+</body>
+
+</html>
